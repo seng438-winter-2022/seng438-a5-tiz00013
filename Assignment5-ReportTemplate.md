@@ -71,7 +71,7 @@ For the third graph in figure 5, if we choose to decrease the maximum acceptable
 </p>
 </br>
 </br>
-For the fourth graph in figure 6, if we choose to increase the maximum acceptable number of failures from 2.1 to 4 (double), the observed failures line will reach the acceptance area. Based on the existing system failure data we have, we can accept the system if we are willing to accept a maximum of 3 failures per hour on running the system. Also, there is a 5% chance that this acceptance decision is accidentally wrong (because of the 0.05 user’s risk).
+For the fourth graph in figure 6, if we choose to increase the maximum acceptable number of failures from 2.1 to 4.2 (double), the observed failures line will reach the acceptance area. Based on the existing system failure data we have, we can accept the system if we are willing to accept a maximum of 4.2 failures per hour on running the system. Also, there is a 5% chance that this acceptance decision is accidentally wrong (because of the 0.05 user’s risk).
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/8.png" alt="Material Bread logo">
 </p>
@@ -99,10 +99,10 @@ Disadvantages:
 # Comparison of Results
 
 # Discussion on Similarity and Differences of the Two Techniques
+The Reliability Growth Testing and the Reliability assessment using the RDC are both used for analyzing the failure data of the system and for understanding the reliability of the system. Using the Reliability Growth Testing, the failure data can be analyzed and displayed as the time between the failures graph and failure intensity graphs. So, these graphs can help us to visualize the entire data over the entire time range. Whereas, in Reliability Demonstration Chart, It is used for checking whether the target failure rate or MTTF is met by the system based on the given failure data of the system. In RDC, the failure data is compared and analyzed with the accepting and rejecting conditions.
 
 # How the team work/effort was divided and managed
-
-# 
+We worked together to download all the related software or programs needed to complete the lab successfully. For part 1, the program called C-SFRAT was used. For part 2, Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf were used. The work was divided evenly among all group members. Grimier and Muhammad worked on part 1 while Manpreet and Tianfan worked on part 2. Our results and findings were compared with each other and verified to make sure that our results were correct. Once our results were verified among each other then we worked on completing the report. 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
