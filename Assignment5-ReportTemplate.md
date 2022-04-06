@@ -37,14 +37,14 @@ The risk parameters can determine the probability of an error in the estimate. A
 </br>
 The input of the RDC is the cumulative failures count and cumulative execution time of the system. We choose an hour as the unit of the input event. The cumulative failure counts and execution time is taken from the failure data csv file provided with the assignment 5 repository. The 16 observation data records are taken from T=10 to T=26 are illustrated in figure 2. In our test, we set our initial maximum acceptable number of failures value (target MTTF)  to 1.5. Based on that initial value, we did an experiment to test it with twice and half of that value to reassess the system. One thing to notice in figure 2 is that based on the limitation of the RDC-11 analysis tool (y-axis can show a maximum of 16 failures), we use 0.1x original failure count and 0.1x maximum acceptable number of failures value to let the plotting can be correctly displayed on the graph.
 <p align="center">
-  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/2.png" alt="Material Bread logo">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/9.png" alt="Material Bread logo">
 </p>
 <p align="center">
    Figure 2- Failure Count and Time Data for the Graphs
 </p>
 </br>
 </br>
-As can be seen on the first graph in figure 3, when we choose to have a maximum acceptable number of failures as 2.1, the observed failures line is located within the continued test area and touches the acceptable green area. This is to say, based on the collected data information we have, we cannot make any accept or reject conclusions about the system. More failure tests need to be done for the system. So that we actually need to be provided more data to make a decision.
+As can be seen on the first graph in figure 3, when we choose to have a maximum acceptable number of failures as 2.1, the observed failures line is located within the continued test area and touches the acceptable green area. 
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/6.png" alt="Material Bread logo">
 </p>
@@ -83,6 +83,18 @@ For the fourth graph in figure 6, if we choose to increase the maximum acceptabl
 
 ## Explain your evaluation and justification of how you decide MTTFmin
 The minimum MTTF value we got from the data we selected is 2.1. As can be seen on the graph in figure 3, when the MTTF (maximum acceptable number of failures) value is 2.1, the failure line barely reached the acceptance area. This is to say, if we choose an MTTF value smaller than 2.1, the line will still be located within the continued area. And if we choose any value which is greater than 2.1, more parts of the line will reach the acceptance area. So 2.1 is the minimum MTTF value, which means if we want to accept the system, we must accept the failure rate of at least 2.1 failures per hour.
+
+## A discussion on the advantages and disadvantages of RDC
+Advantages:
+1. It is a time and cost-effective solution to understand the reliability of a system 
+2. Open source and can be viewed and accessed by anyone
+3. A useful technique to see whether more testing is required so that reliability of a system can be increased 
+
+Disadvantages:
+1. The exact quantitative value of reliability cannot be calculated
+2. Experimenting with MTTF or the what-if scenarios could potentially waste time  
+3. The RDC can demonstrate only the trend of changes 
+
 
 # Comparison of Results
 
