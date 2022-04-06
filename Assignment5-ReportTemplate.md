@@ -13,6 +13,10 @@
 The goal of this lab was to analyze the integration test data using the reliability assessments tools. The assessment of the failure data was done by Reliability growth Testing using C-SFRAT and Reliability assessment using a Reliability demonstration chart. After analyzing failure data from both techniques, the results computed from the techniques were compared. Moreover, the advantages and disadvantages of both techniques were discussed, and also similarities and differences between them.
 
 # Assessment Using Reliability Growth Testing 
+
+
+
+
 ## A discussion on the advantages and disadvantages of reliability growth analysis 
 There are a lot of benefits of the Reliability Growth Analysis and some of them are as follows
 
@@ -105,5 +109,7 @@ The Reliability Growth Testing and the Reliability assessment using the RDC are 
 We worked together to download all the related software or programs needed to complete the lab successfully. For part 1, the program called C-SFRAT was used. For part 2, Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf were used. The work was divided evenly among all group members. Grimier and Muhammad worked on part 1 while Manpreet and Tianfan worked on part 2. Our results and findings were compared with each other and verified to make sure that our results were correct. Once our results were verified among each other then we worked on completing the report. 
 
 # Difficulties encountered, challenges overcome, and lessons learned
+This lab gave us a good understanding of becoming familiar with reliability growth assessment tool tools like C-SFRAT and how they can be used to create graphs of the failure rate. The second part of this lab used the Reliability Demonstration Chart (RDC) to check if the MTTF is met or not. Since there were some data points given and this was used to see the trend for the reliability of the system. Some of the difficulties that we faced were related to part 1 as the SRTAT tool was unresponsive and outdated compared to modern testing tools as it was designed on older Windows versions. The Graphic User Interface (GUI) was very hard to see the display of the window and results. 
 
 # Comments/feedback on the lab itself
+By completing this lab, we have learned how reliability assessment tools can be used to investigate failure data using the following techniques: Reliability growth testing and Reliability assessment using the Reliability Demonstration Chart (RDC). However, downloading these tools did waste a lot of our time and this time could have been used to complete the lab or to further enhance our understanding of these topics. Also, some tools such as the STRAT was not working as they should be and this caused frustration.  Furthermore, the instructions given in the lab manual were very vague in terms of modeling data using these tools. 
