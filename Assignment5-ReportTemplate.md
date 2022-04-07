@@ -13,8 +13,72 @@
 The goal of this lab was to analyze the integration test data using the reliability assessments tools. The assessment of the failure data was done by Reliability growth Testing using C-SFRAT and Reliability assessment using a Reliability demonstration chart. After analyzing failure data from both techniques, the results computed from the techniques were compared. Moreover, the advantages and disadvantages of both techniques were discussed, and also similarities and differences between them.
 
 # Assessment Using Reliability Growth Testing 
+C-SFRAT tool was used for reliability growth testing. This tool allowed us to apply multiple models to the failure data to evaluate accuracy of each model. 
 
+## Result of model comparison (selecting top two models)
+There are a total 8 models available in tool with each up to 6 combinations of covariates. Two best fit models were identified based on highest mean and median weighted from multiple goodness of fitness methods. As shown in below figure, top two models were Discrete Weibull (Type III) with covariate F and IFR generalized Salvia & Bolin with covariate F.
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/10.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 1- Model comparison
+</p>
+</br>
+</br>
 
+## Result of range analysis (an explanation of which part of data is good for proceeding with the analysis)
+Intensity of failure at interval 2 is very high. Removing interval 1 and 2 make the slightly more accurate than before.
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/11.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 2- Failure intensity - including interval 1 and 2
+</p>
+</br>
+</br>
+
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/12.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 3- Failure intensity – excluding interval 1 and 2
+
+</p>
+</br>
+</br>
+## Plots for failure rate and reliability of the SUT for the test data provided
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/13.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 4-  Failure rate
+
+</p>
+</br>
+</br>
+Prediction from DW3 for next 40 intervals show failure rate to be relatively lower. System is becoming more reliable.
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/14.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 5-  Failure prediction using DW3 model
+
+</p>
+</br>
+</br>
+
+## A discussion on decision making given a targe failure rate
+Based on the prediction, it is reasonable to achieve the target failure rate of 0.55. Target failure rate can be possible reached in 12 more intervals.
+
+<p align="center">
+  <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/15.png" alt="Material Bread logo">
+</p>
+<p align="center">
+   Figure 6-  Target failure rate
+
+</p>
+</br>
+</br>
 
 
 ## A discussion on the advantages and disadvantages of reliability growth analysis 
@@ -30,57 +94,57 @@ There are some disadvantages of the reliability growth analysis and some of them
 2. This technique is time-consuming.
 
 # Assessment Using Reliability Demonstration Chart 
-The risk parameters can determine the probability of an error in the estimate. As shown within figure 1, the parameters we used for testing are 2.0 for Discrimination Ratio γ, 0.05 for Developer’s risk a, and 0.05 for user’s risk b, where developers risk is rejecting an acceptable system and user’s risk is releasing an unacceptable system. These 3 risk parameters together determine the acceptance (green), rejection (red), and continue (yellow) segment areas on RDC, which helps us to judge the reliability of the system.
+The risk parameters can determine the probability of an error in the estimate. As shown within figure 7, the parameters we used for testing are 2.0 for Discrimination Ratio γ, 0.05 for Developer’s risk a, and 0.05 for user’s risk b, where developers risk is rejecting an acceptable system and user’s risk is releasing an unacceptable system. These 3 risk parameters together determine the acceptance (green), rejection (red), and continue (yellow) segment areas on RDC, which helps us to judge the reliability of the system.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/1.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 1- Risk Profile Paramteres
+   Figure 7- Risk Profile Paramteres
 </p>
 </br>
 </br>
-The input of the RDC is the cumulative failures count and cumulative execution time of the system. We choose an hour as the unit of the input event. The cumulative failure counts and execution time is taken from the failure data csv file provided with the assignment 5 repository. The 16 observation data records are taken from T=10 to T=26 are illustrated in figure 2. In our test, we set our initial maximum acceptable number of failures value (target MTTF)  to 1.5. Based on that initial value, we did an experiment to test it with twice and half of that value to reassess the system. One thing to notice in figure 2 is that based on the limitation of the RDC-11 analysis tool (y-axis can show a maximum of 16 failures), we use 0.1x original failure count and 0.1x maximum acceptable number of failures value to let the plotting can be correctly displayed on the graph.
+The input of the RDC is the cumulative failures count and cumulative execution time of the system. We choose an hour as the unit of the input event. The cumulative failure counts and execution time is taken from the failure data csv file provided with the assignment 5 repository. The 16 observation data records are taken from T=10 to T=26 are illustrated in figure 8. In our test, we set our initial maximum acceptable number of failures value (target MTTF)  to 1.5. Based on that initial value, we did an experiment to test it with twice and half of that value to reassess the system. One thing to notice in figure 8 is that based on the limitation of the RDC-11 analysis tool (y-axis can show a maximum of 16 failures), we use 0.1x original failure count and 0.1x maximum acceptable number of failures value to let the plotting can be correctly displayed on the graph.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/9.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 2- Failure Count and Time Data for the Graphs
+   Figure 8- Failure Count and Time Data for the Graphs
 </p>
 </br>
 </br>
-As can be seen on the first graph in figure 3, when we choose to have a maximum acceptable number of failures as 2.1, the observed failures line is located within the continued test area and touches the acceptable green area. 
+As can be seen on the first graph in figure 9, when we choose to have a maximum acceptable number of failures as 2.1, the observed failures line is located within the continued test area and touches the acceptable green area. 
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/6.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 3- Plot for MTTFmin
+   Figure 9- Plot for MTTFmin
 </p>
 </br>
 </br>
-For the second graph in figure 4, if we choose to decrease the maximum acceptable number of failures from 2.1 to 1.05 (half), the observed failures line is located within the continued test area. This is to say, based on the collected data information we have, we cannot make any accept or reject conclusions about the system. More failure tests need to be done for the system. So that we actually need to be provided more data to make a decision.
+For the second graph in figure 10, if we choose to decrease the maximum acceptable number of failures from 2.1 to 1.05 (half), the observed failures line is located within the continued test area. This is to say, based on the collected data information we have, we cannot make any accept or reject conclusions about the system. More failure tests need to be done for the system. So that we actually need to be provided more data to make a decision.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/7.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 4- Plot for half of the MTTFmin
+   Figure 10- Plot for half of the MTTFmin
 </p>
 </br>
 </br>
-For the third graph in figure 5, if we choose to decrease the maximum acceptable number of failures to less than half of the MTTFmin which is 0.075, the observed failures line will reach the reject area. Based on the existing system failure data we have, we need to reject the system if we are only willing to accept a maximum of 0.75 failures per hour on running the system. There is a 5% chance that this reject decision is accidentally wrong (because of the 0.05 developer's risk).
+For the third graph in figure 11, if we choose to decrease the maximum acceptable number of failures to less than half of the MTTFmin which is 0.075, the observed failures line will reach the reject area. Based on the existing system failure data we have, we need to reject the system if we are only willing to accept a maximum of 0.75 failures per hour on running the system. There is a 5% chance that this reject decision is accidentally wrong (because of the 0.05 developer's risk).
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/4.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 4- Plot for value less than half of the MTTFmin
+   Figure 11- Plot for value less than half of the MTTFmin
 </p>
 </br>
 </br>
-For the fourth graph in figure 6, if we choose to increase the maximum acceptable number of failures from 2.1 to 4.2 (double), the observed failures line will reach the acceptance area. Based on the existing system failure data we have, we can accept the system if we are willing to accept a maximum of 4.2 failures per hour on running the system. Also, there is a 5% chance that this acceptance decision is accidentally wrong (because of the 0.05 user’s risk).
+For the fourth graph in figure 12, if we choose to increase the maximum acceptable number of failures from 2.1 to 4.2 (double), the observed failures line will reach the acceptance area. Based on the existing system failure data we have, we can accept the system if we are willing to accept a maximum of 4.2 failures per hour on running the system. Also, there is a 5% chance that this acceptance decision is accidentally wrong (because of the 0.05 user’s risk).
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/8.png" alt="Material Bread logo">
 </p>
 <p align="center">
-   Figure 6- Plot for double of the MTTFmin
+   Figure 12- Plot for double of the MTTFmin
 </p>
 </br>
 </br>
