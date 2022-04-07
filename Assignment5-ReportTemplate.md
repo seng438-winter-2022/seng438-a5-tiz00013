@@ -16,7 +16,7 @@ The goal of this lab was to analyze the integration test data using the reliabil
 C-SFRAT tool was used for reliability growth testing. This tool allowed us to apply multiple models to the failure data to evaluate accuracy of each model. 
 
 ## Result of model comparison (selecting top two models)
-There are a total 8 models available in tool with each up to 6 combinations of covariates. Two best fit models were identified based on highest mean and median weighted from multiple goodness of fitness methods. As shown in below figure, top two models were Discrete Weibull (Type III) with covariate F and IFR generalized Salvia & Bolin with covariate F.
+There are a total 8 models available in tool with each up to 6 combinations of covariates. Two best fit models were identified based on highest mean and median weighted from multiple goodness of fitness methods. As shown in below figure 1, top two models were Discrete Weibull (Type III) with covariate F and IFR generalized Salvia & Bolin with covariate F.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/10.png" alt="Material Bread logo">
 </p>
@@ -27,7 +27,7 @@ There are a total 8 models available in tool with each up to 6 combinations of c
 </br>
 
 ## Result of range analysis (an explanation of which part of data is good for proceeding with the analysis)
-Intensity of failure at interval 2 is very high. Removing interval 1 and 2 make the slightly more accurate than before.
+Intensity of failure at interval 2 is very high as shown in figure 2. Removing interval 1 and 2 make the slightly more accurate than before and is illustrated in figure 3.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/11.png" alt="Material Bread logo">
 </p>
@@ -58,7 +58,7 @@ Intensity of failure at interval 2 is very high. Removing interval 1 and 2 make 
 </p>
 </br>
 </br>
-Prediction from DW3 for next 40 intervals show failure rate to be relatively lower. System is becoming more reliable.
+Prediction from DW3 for next 40 intervals show failure rate to be relatively lower as illustrated in figure 5. System is becoming more reliable.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/14.png" alt="Material Bread logo">
 </p>
