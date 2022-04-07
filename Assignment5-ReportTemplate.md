@@ -46,7 +46,9 @@ Intensity of failure at interval 2 is very high. Removing interval 1 and 2 make 
 </p>
 </br>
 </br>
-## Plots for failure rate and reliability of the SUT for the test data provided
+
+## Plots for failure rate and reliability of the SUT for the test data provided 
+ 
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/13.png" alt="Material Bread logo">
 </p>
