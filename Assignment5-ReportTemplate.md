@@ -98,7 +98,7 @@ There are some disadvantages of the reliability growth analysis and some of them
 2. This technique is time-consuming.
 
 # Assessment Using Reliability Demonstration Chart 
-The risk parameters can determine the probability of an error in the estimate. As shown within figure 7, the parameters we used for testing are 2.0 for Discrimination Ratio γ, 0.05 for Developer’s risk a, and 0.05 for user’s risk b, where developers risk is rejecting an acceptable system and user’s risk is releasing an unacceptable system. These 3 risk parameters together determine the acceptance (green), rejection (red), and continue (yellow) segment areas on RDC, which helps us to judge the reliability of the system.
+The risk parameters can determine the probability of an error in the estimate. As shown within figure 7, the parameters we used for testing are 2.0 for Discrimination Ratio γ, 0.1 for Developer’s risk a, and 0.1 for user’s risk b, where developers risk is rejecting an acceptable system and user’s risk is releasing an unacceptable system. These 3 risk parameters together determine the acceptance (green), rejection (red), and continue (yellow) segment areas on RDC, which helps us to judge the reliability of the system.
 <p align="center">
   <img width="600" src="https://github.com/seng438-winter-2022/seng438-a5-tiz00013/blob/main/images/1.png" alt="Material Bread logo">
 </p>
