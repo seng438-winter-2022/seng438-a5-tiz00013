@@ -154,7 +154,7 @@ For the fourth graph in figure 12, if we choose to increase the maximum acceptab
 </br>
 
 ## Explain your evaluation and justification of how you decide MTTFmin
-The minimum MTTF value we got from the data we selected is 2.1. As can be seen on the graph in figure 3, when the MTTF (maximum acceptable number of failures) value is 2.1, the failure line barely reached the acceptance area. This is to say, if we choose an MTTF value smaller than 2.1, the line will still be located within the continued area. And if we choose any value which is greater than 2.1, more parts of the line will reach the acceptance area. So 2.1 is the minimum MTTF value, which means if we want to accept the system, we must accept the failure rate of at least 2.1 failures per hour.
+The minimum MTTF value we got from the data we selected is 2.1. As can be seen on the graph in figure 9, when the MTTF (maximum acceptable number of failures) value is 2.1, the failure line barely reached the acceptance area. This is to say, if we choose an MTTF value smaller than 2.1, the line will still be located within the continued area. And if we choose any value which is greater than 2.1, more parts of the line will reach the acceptance area. So 2.1 is the minimum MTTF value, which means if we want to accept the system, we must accept the failure rate of at least 2.1 failures per hour.
 
 ## A discussion on the advantages and disadvantages of RDC
 Advantages:
